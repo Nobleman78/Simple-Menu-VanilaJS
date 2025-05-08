@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Outfit", sans-serif;
+}
+.menu__section{
+    max-width: 1300px;
+    margin: auto;
+}
+.menu__section .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.btn-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0px;
+}
+.btn-container button{
+    padding: 5px 10px;
+}
+.menu-item img{
+    width: 200px;
+    height: 200px;
+}
+.section-center{
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 30px; 
+    gap: 20px;
+}
+.section-center .menu-item{
+    width: 300px;
+    padding: 10px 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-center .menu-item img{
+    width: 100%;
+    border-radius: 20px;
+}
+.section-center .menu-item .item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-center .menu-item .item-info header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Base styles already included (as you provided) */
+
+/* Responsive for tablets (<= 992px) */
+@media (max-width: 992px) {
+    .menu__section .title{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .section-center {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+        margin: 0px;
+    }
+  
+    .menu__section .title {
+      font-size: 26px;
+    }
+  
+    .btn-container {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .section-center .menu-item {
+      width: 100%;
+    }
+  }
+  
+/* Optional: For smaller screens below 480px */
+@media only screen and (max-width: 500px) {
+    .menu__section {
+        padding: 0 15px;
+    }
+    .menu__section .title {
+        font-size: 22px;
+        padding: 0 10px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .btn-container {
+        margin: 15px 0;
+        gap: 8px;
+    }
+
+    .btn-container button {
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    .section-center {
+        width: 100%;
+        gap: 25px;
+        padding: 0 10px;
+    }
+
+    .section-center .menu-item {
+        padding: 10px 0;
+        width: 100%;
+        max-width: none;
+    }
+
+    .menu-item img {
+        border-radius: 15px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .item-info {
+        padding: 0 5px;
+    }
+
+    .item-info header {
+        gap: 6px !important;
+    }
+
+    .item-info .price {
+        font-size: 14px;
+    }
+
+    .item-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
